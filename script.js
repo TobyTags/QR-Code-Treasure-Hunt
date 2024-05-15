@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('password').value;
 
         // Get a reference to the Firestore database
-        const db = getFirestore();
+        const db = getFirestore(app);
         alert('3');
         // Get the document from the users collection where the username matches the input username
         db.collection("Login").where("username", "==", username)
