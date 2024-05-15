@@ -17,6 +17,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+//initalisng secondary yfirebase app
+firebase.initializeApp(firebaseConfig);
+
 
 // Add event listener when DOM content is loaded
 document.addEventListener('DOMContentLoaded', function() {
