@@ -3,7 +3,6 @@
 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js";
 
 // Your web app's Firebase configuration
@@ -21,7 +20,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const db = getFirestore(app);
 
 
 
@@ -35,9 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
-
-        // Get a reference to the Firestore database
-        const db = getFirestore(app);
+    
         alert('3');
         // Get the document from the users collection where the username matches the input username
         db.collection("Login").where("username", "==", username)
