@@ -1,7 +1,4 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
-// TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
@@ -20,17 +17,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-alert('here');
-
 
 // Add event listener when DOM content is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    alert('1');
+    
     const loginForm = document.getElementById('login-form');
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
-        alert('2');
+        
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
