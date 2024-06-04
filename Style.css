@@ -388,4 +388,12 @@ footer.footerT {
     flex-grow: 1; /* Allow footer to grow and fill remaining space */
     bottom: 0; /* Set bottom position to 0 */
   }
+
+  @media only screen and (max-width: 768px) {
+    .footerT {
+      position: fixed; /* Fixed position for mobile */
+      bottom: 0; /* Set bottom position to 0 */
+      width: 100%; /* Set width to 100% */
+    }
+  }
   
