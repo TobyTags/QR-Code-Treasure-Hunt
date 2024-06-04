@@ -4,24 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <!-- Include any CSS files or stylesheets here -->
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <header>
-        <!-- Header content goes here -->
+        <h1>User Dashboard</h1>
+
+        <button id="logout" class="logoutstyles">Logout</button>
+
+        <button id="print" class="printbtnsyling">Print</button>
+
+        <button id="addQRCode" class="addQRCodeStyles">Add QR Code</button>
+
+
+        <script type="module">
+            import { LoadQRData } from './script.js';
+
+            window.onload = function() {
+                const username = localStorage.getItem('username');
+                if (!username) {
+                    // If username is not found in local storage, redirect to the login page
+                    window.location.href = 'index.html';
+                } else {
+                    // If username exists, load QR data
+                    LoadQRData();
+                }
+            }
+        </script>
+
     </header>
     
-    <nav>
-        <!-- Navigation links or menu goes here -->
-    </nav>
-    
     <main>
-        <h1>Welcome to Your Dashboard!</h1>
-        <!-- Your dashboard content goes here -->
+        <!-- Just deleted origional container because was causing 2 much trouble when it came to database handeling-->
+        <h2>Start making your QR codes below!!</h2>
     </main>
-    
-    <footer>
-        <!-- Footer content goes here -->
+
+    <footer class="footerT">
+        <div class="footer-content">
+            <div class="footer-left">
+            <p class="footer-text"> <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT License,</a> Copyright (c) 2024 Toby Tangney </p>
+            
+            </div>
+            <div class="footer-right">
+            <p class="footer-text">Contact Me: <a href="#">TobyTangney@gmail.com</a></p>
+            </div>
+        </div>
     </footer>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
+
+
+

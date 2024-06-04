@@ -62,3 +62,320 @@ button:hover {
     font-size: 12px;
     margin-top: 5px;
 }
+
+
+/* button neet style */
+.Loginbuttons {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.secondlogdiv {
+    padding-top: 20px;
+}
+
+
+.footershout {
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style sheet for main qr making page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* log out button stylling*/
+.logoutstyles {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin: 10px auto;  /* Add margin with auto for centering */
+    max-width: 50%;
+}
+
+.logoutstyles:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.addQRCodeStyles {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;  /* Add margin with auto for centering */
+    max-width: 50%;
+}
+
+.addQRCodeStyles:hover {
+    background-color: #327434; /* Green */
+}
+
+.logoutstyles:hover{
+    opacity: 0.8;
+}
+
+
+.printbtnsyling {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #7249ea;
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin: 10px auto;  /* Add margin with auto for centering */
+    max-width: 50%;
+}
+
+.printbtnsyling:hover {
+    background-color: #5133aa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* qr container styling */
+.RealContainer {
+    /* Container Styles */
+    margin: 20px; /* Margin around the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Border around the container */
+    border-radius: 5px; /* Rounded corners for the container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 50%; /* Limit maximum width */
+    margin: auto; /* Center the container horizontally */
+
+    float: left;
+
+    display: flex; /* Change display to inline-block */
+    vertical-align: top; /* Align tops of containers in a row */
+}
+
+.RealContainer:last-child {
+    margin-right: 0; /* Remove margin from the last container in a row */
+}
+
+.RealContainer img {
+    /* Image Styles */
+    padding-top: 30px;
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+.RealContainer button {
+    /* Button Styles */
+    margin-top: 10px; /* Spacing between buttons */
+    
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.RealContainer button:hover {
+    transform: scale(1.05); /* Slightly increase button size */
+}
+
+#save3 {
+    background-color: #5c85eb; /* Blue background color */
+}
+
+#delete3 {
+    background-color: #cc1c1c; /* Blue background color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRINTING CODE --------------------------- */
+
+@media print {
+    main * {
+        display: flex  !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer code --------------------------- */
+
+footer.footerT {
+    background-color: #989e99; /* Change background color as needed */
+    color: #333; /* Change text color as needed */
+    padding: 20px; /* Adjust padding if desired */
+    text-align: center; /* Center content horizontally */
+  }
+  
+  footer.footerT .footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space content evenly */
+    align-items: center; /* Align content vertically */
+    flex-wrap: wrap; /* Allow content to wrap if needed */
+  }
+  
+  footer.footerT .footer-left,
+  footer.footerT .footer-right {
+    flex: 0 0 50%; /* Set width for each section (adjust as needed) */
+  }
+  
+  footer.footerT .footer-logo {
+    width: 100px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below logo */
+  }
+  
+  footer.footerT .social-links {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  footer.footerT .social-links li {
+    display: inline-block; /* Display links inline */
+    margin-right: 10px; /* Add spacing between links */
+  }
+  
+  footer.footerT a {
+    color: blue; /* Inherit text color from footer */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  footer.footerT a:hover {
+    color: #007bff; /* Change hover color as needed */
+  }
+  
+  .footerT {
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Set bottom position to 0 */
+    width: 100%; /* Set width to 100% */
+    /* Rest of your footer styles */
+  }
+  
