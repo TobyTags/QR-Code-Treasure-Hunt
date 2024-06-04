@@ -332,6 +332,7 @@ footer.footerT {
     padding: 20px; /* Adjust padding if desired */
     text-align: center; /* Center content horizontally */
   }
+
   
   footer.footerT .footer-content {
     display: flex; /* Use flexbox for layout */
@@ -377,5 +378,14 @@ footer.footerT {
     bottom: 0; /* Set bottom position to 0 */
     width: 100%; /* Set width to 100% */
     /* Rest of your footer styles */
+  }
+
+  .footerT {
+    display: flex;
+    flex-direction: column; /* Optional, if needed */
+    justify-content: flex-end; /* Align footer to the bottom */
+    width: 100%; /* Set width to 100% */
+    flex-grow: 1; /* Allow footer to grow and fill remaining space */
+    bottom: 0; /* Set bottom position to 0 */
   }
   
